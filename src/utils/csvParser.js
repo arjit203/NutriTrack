@@ -18,6 +18,8 @@ const fetchDataFromCSV = (foodName) => {
           row.food &&
           row.food.trim().toLowerCase() === foodName.trim().toLowerCase()
         ) {
+          console.log("Matching food item found in CSV:", row.food);
+          
           results.push(row);
         }
       })
