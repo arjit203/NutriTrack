@@ -2,7 +2,10 @@ const express = require('express');
 const router = express.Router();
 const nutritionController = require('../controllers/nutritionController');
 
-// Route to fetch nutrition analysis
-router.post('/analyze', nutritionController.getNutritionAnalysis);
+router.post('/', (req, res) => {
+    console.log(req.body);  // Log the request body
+    nutritionController.getNutritionByItem(req, res);
+  });
+  
 
 module.exports = router;
