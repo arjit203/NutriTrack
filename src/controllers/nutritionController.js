@@ -73,6 +73,7 @@ exports.getNutritionByItem = async (req, res) => {
       },
     });
     
+    
   } catch (error) {
     console.error("Error fetching nutrition data:", error.message);
     return res.status(500).json({ error: "Failed to fetch nutrition data" });
