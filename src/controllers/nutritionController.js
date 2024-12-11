@@ -61,12 +61,12 @@ exports.getNutritionByItem = async (req, res) => {
     return res.status(200).json({
       data: {
         Food_Name: foodItem.Food_Name,
-        Calories: foodItem.Calories,
+        Calories: foodItem.Caloric_Value,
         Fat: foodItem.Fat,
         Carbs: foodItem.Carbs,
         Sugar: foodItem.Sugar,
         Protein: foodItem.Protein,
-        Dietary_fiber: foodItem.Dietary_fiber,
+        Dietary_fiber: foodItem.Dietary_Fiber,
         Cholesterol: foodItem.Cholesterol,
         Iron: foodItem.Iron,
         Nutri_Density: foodItem.Nutri_Density,
